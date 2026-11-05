@@ -1,0 +1,494 @@
+/* html{
+  height: 100%;
+} */
+:root {
+  --h: 10vh;
+  --root-bg-color: #ffffff;
+  --root-font-color: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  background: var(--root-bg-color) !important;
+  color: var(--root-font-color) !important;
+  overflow-x: hidden;
+}
+.chapter {
+  text-align: center;
+}
+
+.lname img {
+  height: var(--h);
+  width: auto;
+  display: inline-block;
+  position: sticky;
+  padding: 5px/0;
+  margin: 0;
+  margin-left: -3vw;
+  margin-top: -1vh;
+}
+.bg-myColor {
+  background: linear-gradient(to right, #ffdfd6, #694f8e) !important;
+}
+
+.mode {
+  height: 7vh;
+  width: auto;
+  display: inline-block;
+  margin: 0;
+  padding: 2px;
+  padding-right: 0;
+  border: 1px solid;
+  border-radius: 50%;
+}
+/* .bgLight
+{
+
+  background-color: white;
+}
+.bgDark
+{
+  background-color: #030637;
+  color: white;
+} */
+.lotusLogo {
+  margin-top: 5vh;
+  height: 20vh;
+  width: auto;
+}
+.intro {
+  text-align: center;
+  margin-top: -5vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+.intro p,
+.intro h {
+  font-size: 1.25rem;
+}
+.btnglow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 5vh;
+}
+.btnglow > * {
+  text-align: center;
+  height: 10vh;
+  width: 18vh;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 1rem;
+  box-shadow: 4px 5px 12px 15px #3c0753;
+}
+.btn-light {
+  background: #910a67;
+}
+.btn-light:hover {
+  background-image: linear-gradient(45deg, #910a67, #720455, #3c0753, #030637);
+}
+
+.btn-dark {
+  background: #e3a5c7;
+}
+.btn-dark:hover {
+  background-image: linear-gradient(
+    to right,
+    #ffdfd6,
+    #e3a5c7,
+    #b692c2,
+    #694f8e
+  );
+}
+
+.tileimg {
+  width: 40vh;
+  height: 35vh;
+  margin: 5px;
+}
+
+.tile {
+  width: 52vh;
+  height: 45vh;
+  text-align: center;
+  border: 1px solid;
+  box-shadow: 5px 5px 8px;
+  border-radius: 10px;
+  min-width: 300px;
+}
+
+.tiles {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px;
+}
+
+.btn-ctn {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+h1 {
+  text-decoration: none;
+}
+
+/* .motImg
+{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  height: 60vh;
+  width: 100vw;
+  margin: 5px;
+  flex-wrap: wrap;
+} */
+/* .motImg img
+{
+  height: 60vh;
+  width: auto;
+  min-width: 350px;
+} */
+.motImg {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  margin: 5px;
+  flex-wrap: wrap;
+}
+.motImg img {
+  width: 60vw;
+  height: auto;
+  min-width: 320px;
+  max-width: 700px;
+}
+
+.motImg h2 {
+  align-self: center;
+  margin: 1rem;
+}
+
+.motcard {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  height: 90vh;
+  width: 100vw;
+  padding: 5px;
+  gap: 10 px;
+  flex-wrap: wrap;
+}
+
+.motcard img {
+  height: 70vh;
+  width: 50vh;
+  min-width: 275px;
+  border: 1px solid;
+  box-shadow: 5px 5px 8px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 5vh;
+  margin-left: 8px;
+}
+.motcard button {
+  align-self: center;
+  margin-left: 4vh;
+}
+.motright {
+  text-align: center;
+  align-self: center;
+  margin-left: 12px;
+  font-size: 1.25rem;
+}
+
+.motmsg {
+  margin: 1rem;
+  text-align: center;
+}
+
+.stories {
+  text-align: center;
+}
+
+.stories h1 {
+  margin-top: 3vh;
+  font-size: 2rem;
+}
+
+.chapterImg {
+  width: 100vw;
+  height: auto;
+  padding: 5px;
+}
+
+.chapterTxt {
+  white-space: pre-wrap;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 5vh;
+  margin-top: 5vh;
+}
+br {
+  border: 1px solid;
+  margin-top: 2vh;
+}
+
+.josefin-sans-font {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+.chBtns {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5vh;
+}
+
+.chbtn {
+  height: 7vh;
+  width: 15vw;
+  min-width: 100px;
+  font-size: 1.5rem !important;
+}
+/* ===== KathaLok story cards ===== */
+
+.stories {
+  padding: 35px 20px 60px;
+  min-height: 100vh;
+}
+
+.stories h1 {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.tile {
+  background: white;
+  border-radius: 22px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 470px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.18);
+}
+
+.tileimg {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.tile h3 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 1.25;
+  color: #202020;
+}
+
+.tile p {
+  margin-bottom: 10px;
+  line-height: 1.45;
+  color: #555;
+}
+
+.tile .btn-ctn {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.tile .btn {
+  min-height: 48px;
+  border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+  .stories {
+    padding: 25px 14px 50px;
+  }
+
+  .stories h1 {
+    font-size: 2rem;
+  }
+
+  .tiles {
+    grid-template-columns: 1fr;
+  }
+
+  .tile {
+    min-height: auto;
+  }
+
+  .tileimg {
+    height: 220px;
+  }
+}
+
+/* extra spacing between story cards */
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px 30px;
+}
+
+/* extra spacing between story cards */
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 50px;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 20px 25px 40px;
+}
+
+.stories {
+  padding: 30px 20px 50px;
+}
+
+.stories h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 360px));
+  justify-content: center;
+  gap: 35px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.tile {
+  width: 100%;
+  min-height: 560px;
+  border-radius: 22px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+}
+
+.tileimg {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.tile h2,
+.tile h3 {
+  text-align: center;
+  margin: 24px 20px 10px;
+}
+
+.tile p {
+  text-align: center;
+  padding: 0 24px;
+  line-height: 1.6;
+}
+
+.tile .btn {
+  margin-top: auto;
+}
+
+.tile-actions {
+  display: flex;
+  gap: 12px;
+  padding: 18px 24px 10px;
+}
+
+.tile-actions .btn-primary {
+  flex: 1;
+}
+
+.tile-credit {
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.65;
+  margin: 0 0 20px;
+}
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 420px));
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tile {
+  width: 100%;
+  min-height: 690px;
+  border-radius: 22px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.tileimg {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+}
+
+.tile > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-ctn {
+  margin-top: auto;
+}
+
+.tile small {
+  display: block;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
